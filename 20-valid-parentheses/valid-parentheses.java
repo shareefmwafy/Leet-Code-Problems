@@ -1,11 +1,11 @@
 class Solution {
     public boolean isValid(String s) {
-        char[] stack = new char[s.length()];
+        char [] stack = new char[s.length()];
         int top = -1;
-
-        for(int i =0 ; i<s.length();i++){
+        for(int i = 0; i<s.length();i++){
             char c = s.charAt(i);
-            if(c=='(' || c=='[' || c=='{'){
+
+            if(c=='(' || c=='{' || c=='['){
                 stack[++top] = c;
             }
             else{
@@ -13,14 +13,12 @@ class Solution {
                     return false;
                 }
                 char topChar = stack[top--];
-                if((c==')' && topChar != '(')||
-                   (c=='}' && topChar != '{')||
-                   (c==']' && topChar != '[')) {
+                if( (c==')' && topChar !='(') ||
+                    (c=='}' && topChar !='{') ||
+                    (c==']' && topChar !='[')){
                     return false;
-                   }
-                
+                    }
             }
-
         }
         return top == -1;
        
