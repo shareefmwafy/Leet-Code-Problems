@@ -10,15 +10,17 @@ class Solution {
 public:
     bool hasCycle(ListNode *head) {
         while(true){
+            
             if(head == nullptr)
                 return false;
+
             if(head->val == -100)
                 return true;
-            else{
-                head->val = -100;
-                head = head->next;
-            }
+
+            head->val = -100;
+            head = head->next;
+            
         }
-        
+
     }
 };
