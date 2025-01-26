@@ -9,7 +9,6 @@
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
-
         while(true){
             if(head == nullptr)
                 return false;
