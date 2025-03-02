@@ -5,13 +5,13 @@ public:
             return 0;
 
         int maxSum = nums.at(0);
-        int currentSum = nums.at(0);
+        int current = nums.at(0);
 
-        for(int i = 1; i < nums.size(); i++){
+        for(int i = 1; i<nums.size(); i++){
             int n = nums.at(i);
 
-            currentSum = max(currentSum+n, n);
-            maxSum = max(maxSum,currentSum);
+            current = max(current+n, n);
+            maxSum = max(maxSum, current);
         }
         return maxSum;
 
