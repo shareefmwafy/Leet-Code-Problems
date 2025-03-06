@@ -12,7 +12,7 @@ public:
             result += temp[i];
         }
 
-        if((temp.compare(result)) == 0)
+        if(temp == result)
             return true;
 
         return false;
