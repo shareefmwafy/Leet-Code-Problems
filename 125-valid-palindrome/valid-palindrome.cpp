@@ -2,7 +2,7 @@ class Solution {
 public:
     bool isPalindrome(string s) {
         for(int i=0; i<s.length();){
-            if(!isalnum(s[i])){
+            if( !isalnum(s[i])){
                 s.erase(i,1);
             }
             else{
