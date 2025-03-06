@@ -12,12 +12,16 @@ public:
                          
         }
 
-        string temp = "";
+        int left=0, right=s.length()-1;
 
-        for(int i=s.length()-1; i>=0; i--){
-            temp += s[i];
+        while(left < right){
+            if(s[left] != s[right])
+                return false;
+
+            left++;
+            right--;
         }
 
-        return temp == s;
+        return true;
     }
 };
