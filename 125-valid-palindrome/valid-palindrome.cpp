@@ -10,7 +10,6 @@ public:
 
         int rightPtr = result.length() -1;
         int leftPtr = 0;
-
         while(rightPtr > leftPtr){
             if((result[leftPtr] != result[rightPtr]) )
                 return false;
