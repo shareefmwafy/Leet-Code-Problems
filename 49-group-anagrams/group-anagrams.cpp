@@ -5,7 +5,7 @@ public:
 
         for (int i = 0; i < strs.size(); i++) {
             string original = strs[i];
-            string key =  strs[i];
+            string key =  original;
             sort(key.begin(), key.end()); 
             anagramGroups[key].push_back(original);
         }
